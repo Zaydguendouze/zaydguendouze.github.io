@@ -1,0 +1,8 @@
+@media screen and (max-width: 1280px) {
+
+    .hebergement:hover {
+        color: blue;
+        border-bottom-color: blue;
+        border-bottom: solid;
+    }
+}

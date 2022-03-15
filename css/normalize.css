@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+
+* {
+    /* box-sizing est appliqué à tous les éléments */
+    box-sizing: border-box;
+    /* font-family */
+    font-family: 'Raleway', sans-serif;
+}
+
+/* taille de la page principale */
+.container {
+    margin: auto;
+    width: 1440px;
+}
+
+/* HEADER */
+
+/* header et barre de navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+/* Cibler les liens non visités */
+nav li a, a:link, a:visited {
+    text-decoration: none;
+    padding-left: 30px;
+    color: #000;
+    padding: 2rem;
+    padding-left: 20px;
+}
+
+/* Cibler les liens activés par l'utilisateur */
+nav li .active, a:active {
+    color: #0065FC;
+    font-weight: 500;
+    border-top: 3px #0065FC solid;
+}
+
+/* Apparence au survol avec le pointeur */
+nav li a:hover {
+    border-top: 3px #0065FC solid;
+    color: #0065FC;
+}
+
+/* PAGE */
+
+/* .container .container_page {
+    padding: 5px;
+}
+
+.container_page .texte_pub h1 {
+    font-size: 20px;
+}
+
+.container_page .texte_pub p {
+    margin: 5px;
+} */
+
+/* RECHERCHE */
+
+.container_page .recherche form {
+    display: flex;
+}
+
+.container_page .recherche {
+    display: flex;
+    margin-top: 30px;
+}
+
+/* localisation */
+
+.container_page .recherche .localisation {
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    text-align: center;
+}
