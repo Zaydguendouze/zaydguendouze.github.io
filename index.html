@@ -7,10 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
-
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 
@@ -29,23 +25,47 @@
                     <li><a href="#activités">Activités</a></li>
                 </ul>
             </nav>
+
         </header>
 
-        <div class="container_page">
+        <div class="containerPage">
 
             <section>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
 
                 <!-- RECHERCHE -->
-                <div class="recherche">
-
-                    <form action="">
+                <div class="search">
+                    <form>
                         <span class="localisation"><i class="fas fa-map-marker-alt markerFormIcon"></i></span>
+                        <input type="search" class="input-search" placeholder="Marseille, France">
+                        <input type="submit" class="btn-search no-mobile-search-btn" value="Rechercher">
+                        <button class="btn-search mobile-btn-search"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
 
+                <!-- FILTRES -->
+                <div class="filters">
+                    <h3>Filtres</h3>
+                    <div class="filtersList">
+                        <span><i class="fas fa-money-bill-wave filtersIcon"></i> <span
+                                class="filterTitle">Économique</span></span>
+                        <span><i class="fas fa-child filtersIcon"></i> <span class="filterTitle">Familial</span></span>
+                        <span><i class="fas fa-heart filtersIcon"></i> <span
+                                class="filterTitle">Romantique</span></span>
+                        <span><i class="fas fa-dog filtersIcon"></i> <span class="filterTitle">Animaux
+                                autorisés</span></span>
+                    </div>
+                </div>
+
+                <!-- NOTE -->
+                <div class="note">
+                    <span class="infoIcons"><i class="fas fa-info"></i></span>
+                    <p class="noteText">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+
             </section>
+
         </div>
 
     </div>
