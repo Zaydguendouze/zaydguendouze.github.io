@@ -201,6 +201,7 @@ les paramétres */
     display: flex;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .infoIcons {
@@ -212,11 +213,96 @@ les paramétres */
     height: 25px;
     border: 1px solid #F2F2F2;
     color: #0065FC;
-    font-size: 0.7em;
+    font-size: 15px;
 }
 
 .noteText {
     display: flex;
     align-items: center;
     margin: 10px;
+}
+
+/* HEBERGEMENTS */
+
+.container .containerPage .hostCards h1 {
+    display: flex;
+    margin: 10px;
+}
+
+.hosting {
+    display: flex;
+}
+
+.hostingCards {
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    width: 65%;
+    flex-wrap: wrap;
+}
+
+.hostingCards h1 {
+    margin: 30px;
+}
+
+.hostingCards .more {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.containerHostingCards {
+    display: flex;
+    background: #F2F2F2;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.containerHostingCards article {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 8%;
+    box-shadow: 0 0 16px #0000002e;
+    flex: 0 0 250px;
+    margin: 15px;
+}
+
+.containerHostingCards article:hover {
+    transform: scale(1.1);
+}
+
+.containerHostingCards .card .image img {
+    height: 130px;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 8%;
+}
+
+.containerHostingCards .card .image .texte {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.containerHostingCards .card .image .texte p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.containerHostingCards .card .image .texte h4, p {
+    margin: 5px;
+}
+
+.blue {
+    color: #0065FC;
+    font-size: 12px;
+}
+
+.grey {
+    color: #F2F2F2;
+    font-size: 12px;
 }
