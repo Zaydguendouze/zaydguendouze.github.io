@@ -369,6 +369,7 @@ les paramétres */
     justify-content: space-evenly;
     flex-direction: column;
     margin: 5px;
+    height: min-content;
 }
 
 .popular .popularCards article .popularCard .popularText h3, p {
