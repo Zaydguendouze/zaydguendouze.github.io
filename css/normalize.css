@@ -15,8 +15,9 @@ entre des objets d'une interface ainsi que de les aligner */
 
 /* taille de la page principale */
 .container {
-    margin: auto;
-    width: 1440px;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
 }
 
 /* HEADER */
@@ -242,8 +243,7 @@ les paramétres */
     border-radius: 20px;
     margin: 10px;
     padding: 10px;
-    width: 65%;
-    flex-wrap: wrap;
+    width: 60%;
 }
 
 .hostingCards h1 {
@@ -266,7 +266,7 @@ les paramétres */
 .containerHostingCards article {
     background-color: #fff;
     padding: 5px;
-    border-radius: 8%;
+    border-radius: 1em;
     box-shadow: 0 0 16px #0000002e;
     flex: 0 0 250px;
     margin: 15px;
@@ -278,26 +278,32 @@ les paramétres */
     transition-duration: 0.8s;
 }
 
-.containerHostingCards .card .image img {
+.containerHostingCards .hostCard .hostImage img {
     height: 130px;
     object-fit: cover;
     max-width: 100%;
     width: 100%;
     max-height: 100%;
-    border-radius: 8%;
+    border-radius: 1em;
 }
 
-.containerHostingCards .card .image .texte {
+.containerHostingCards .hostCard .hostImage .hostText {
     font-size: 18px;
     margin: 10px;
 }
 
-.containerHostingCards .card .image .texte p {
-    font-size: 15px;
-    font-weight: 400;
+
+.containerHostingCards .hostCard .hostImage .hostText h4 {
+    margin: 5px;
+    font-size: 18px;
 }
 
-.containerHostingCards .card .image .texte h4, p {
+.containerHostingCards .hostCard .hostImage .hostText p {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.containerHostingCards .hostCard .hostImage .hostText .stars {
     margin: 5px;
 }
 
@@ -309,4 +315,67 @@ les paramétres */
 .grey {
     color: #F2F2F2;
     font-size: 12px;
+}
+
+/* POPULAIRES */
+
+.container .containerPage .popular {
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin: 10px;
+    width: 30%;
+    padding: 20px;
+}
+
+.container .containerPage .popular h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    margin-bottom: 2px;
+}
+
+.popular .popularCards article {
+    background-color: #fff;
+    margin: 25px;
+    padding: 5px;
+    border-radius: 1em;
+    box-shadow: 0 0 16px #0000002e;
+}
+
+.popular .popularCards article:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+    transition-duration: 0.8s;
+}
+
+.popular .popularCards article .popularCard .popularImage {
+    display: flex;
+    height: 150px;
+}
+
+.popular .popularCards article .popularCard .popularImage img {
+    width: 40%;
+    height: 150px;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    object-fit: cover;
+}
+
+.popular .popularCards article .popularCard .popularText {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.popular .popularCards article .popularCard .popularText h3, p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.popular .popularCards article .popularCard .popularText .stars {
+    margin: 10px;
 }
