@@ -74,28 +74,29 @@ nav li a:hover {
 
 /* PAGE */
 
-.container .containerPage {
+.container .container-page {
     margin-top: 20px;
     padding: 5px;
 }
 
-.containerPage h1 {
+.container-page h1 {
     font-size: 30px;
     font-weight: bold;
 }
 
-.containerPage p {
-    font-size: px;
+.container-page p {
+    font-size: 22px;
 }
 
 /* RECHERCHE */
 
 /* ajustement de tous les élements de la barre */
-.containerPage .search form {
+.container-page .search form {
     display: flex;
+    height: 60px;
 }
 
-.containerPage .search {
+.container-page .search {
     margin-top: 50px;
 }
 
@@ -106,6 +107,7 @@ nav li a:hover {
     padding: 20px;
     border-top-left-radius: 30%;
     border-bottom-left-radius: 30%;
+    align-items: center;
 }
 
 /* input-search */
@@ -120,6 +122,7 @@ nav li a:hover {
     border-bottom: 1px solid #F2F2F2;
     font-weight: bold;
     width: 350px;
+    align-items: center;
 }
 
 /* btn-search */
@@ -128,12 +131,12 @@ nav li a:hover {
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
     border: none;
-    padding: 20px;
     background: #0065FC;
     color: #fff;
     font-weight: bold;
     font-size: 25px;
     width: 200px;
+    align-items: center;
 }
 
 
@@ -157,7 +160,7 @@ h3 {
     margin-right: 20px;
 }
 
-.filtersList {
+.filters-list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -166,7 +169,7 @@ h3 {
 
 /* sélection de tous les élements enfants pour appliquer
 les paramétres */
-.filtersList>* {
+.filters-list>* {
     display: flex;
     align-items: center;
     margin-right: 20px;
@@ -178,7 +181,7 @@ les paramétres */
 
 
 /* déformation des icônes pour agrandissement */
-.filtersList>*:hover {
+.filters-list>*:hover {
     transform: scale(1.1);
     transition: 0.6s;
     transition-duration: 0.8s;
@@ -198,7 +201,7 @@ les paramétres */
     min-width: 60px;
 }
 
-.filterTitle {
+.filter-title {
     display: flex;
     align-items: center;
     margin: 20px;
@@ -213,7 +216,7 @@ les paramétres */
     margin-bottom: 30px;
 }
 
-.infoIcons {
+.info-icons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,7 +228,7 @@ les paramétres */
     font-size: 15px;
 }
 
-.noteText {
+.note-text {
     display: flex;
     align-items: center;
     margin: 10px;
@@ -233,7 +236,7 @@ les paramétres */
 
 /* HEBERGEMENTS */
 
-.container .containerPage .hostCards h1 {
+.container .container-page h1 {
     display: flex;
     margin: 10px;
 }
@@ -242,7 +245,7 @@ les paramétres */
     display: flex;
 }
 
-.hostingCards {
+.hosting-cards {
     display: flex;
     flex-direction: column;
     background: #F2F2F2;
@@ -252,17 +255,17 @@ les paramétres */
     width: 60%;
 }
 
-.hostingCards h1 {
+.hosting-cards h1 {
     margin: 30px;
 }
 
-.hostingCards .more {
+.hosting-cards .more {
     margin-top: 40px;
     font-size: 25px;
     font-weight: 700;
 }
 
-.containerHostingCards {
+.container-hosting-cards {
     display: flex;
     background: #F2F2F2;
     border-radius: 20px;
@@ -270,7 +273,7 @@ les paramétres */
     justify-content: center;
 }
 
-.containerHostingCards article {
+.container-hosting-cards article {
     background-color: #fff;
     padding: 5px;
     border-radius: 1em;
@@ -279,38 +282,39 @@ les paramétres */
     margin: 15px;
 }
 
-.containerHostingCards article:hover {
+.container-hosting-cards article:hover {
     transform: scale(1.1);
     transition: 0.6s;
     transition-duration: 0.8s;
 }
 
-.containerHostingCards .hostCard .hostImage img {
+.container-hosting-cards .hostCard .host-image img {
     height: 130px;
     object-fit: cover;
     max-width: 100%;
     width: 100%;
     max-height: 100%;
-    border-radius: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
-.containerHostingCards .hostCard .hostImage .hostText {
-    font-size: 18px;
+.container-hosting-cards .hostCard .host-image .host-text {
+    font-size: 17px;
     margin: 10px;
 }
 
 
-.containerHostingCards .hostCard .hostImage .hostText h4 {
+.container-hosting-cards .hostCard .host-image .host-text h4 {
     margin: 5px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
-.containerHostingCards .hostCard .hostImage .hostText p {
+.container-hosting-cards .hostCard .host-image .host-text p {
     margin: 5px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
-.containerHostingCards .hostCard .hostImage .hostText .stars {
+.container-hosting-cards .hostCard .host-image .host-text .stars {
     margin: 5px;
 }
 
@@ -326,7 +330,7 @@ les paramétres */
 
 /* POPULAIRES */
 
-.container .containerPage .popular {
+.container .container-page .popular {
     display: flex;
     flex-direction: column;
     background: #F2F2F2;
@@ -337,7 +341,7 @@ les paramétres */
     flex-wrap: wrap;
 }
 
-.container .containerPage .popular h1 {
+.container .container-page .popular h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -345,7 +349,7 @@ les paramétres */
     margin-bottom: 2px;
 }
 
-.popular .popularCards article {
+.popular .popular-cards article {
     background-color: #fff;
     margin: 25px;
     padding: 5px;
@@ -354,18 +358,18 @@ les paramétres */
     align-items: stretch;
 }
 
-.popular .popularCards article:hover {
+.popular .popular-cards article:hover {
     transform: scale(1.1);
     transition: 0.6s;
     transition-duration: 0.8s;
 }
 
-.popular .popularCards article .popularCard .popularImage {
+.popular .popular-cards article .popular-card .popular-image {
     display: flex;
     height: 180px;
 }
 
-.popular .popularCards article .popularCard .popularImage img {
+.popular .popular-cards article .popular-card .popular-image img {
     width: 40%;
     height: auto;
     border-bottom-left-radius: 1em;
@@ -373,7 +377,7 @@ les paramétres */
     object-fit: cover;
 }
 
-.popular .popularCards article .popularCard .popularText {
+.popular .popular-cards article .popular-card .popular-text {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -381,16 +385,124 @@ les paramétres */
     height: auto;
 }
 
-.popular .popularCards article .popularCard .popularText h3 {
+.popular .popular-cards article .popular-card .popular-text h3 {
     margin: 10px;
-    font-size: 17px;
+    font-size: 16px;
 }
 
-.popular .popularCards article .popularCard .popularText p {
+.popular .popular-cards article .popular-card .popular-text p {
     margin: 10px;
-    font-size: 17px;
+    font-size: 16px;
 }
 
-.popular .popularCards article .popularCard .popularText .stars {
+.popular .popular-cards article .popular-card .popular-text .stars {
     margin: 10px;
+}
+
+/* ACTIVITES */
+
+.activity {
+    margin-top: 20px;
+    display: flex;
+}
+
+.activity .activity-cards {
+    width: 100%;
+}
+
+.activity .activity-cards .container-activity-cards {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.activity .activity-cards .container-activity-cards article {
+    background: #fff;
+    border-radius: 1em;
+    box-shadow: 0 0 16px #0000002e;
+    margin: 15px;
+}
+
+.activity .activity-cards .container-activity-cards article:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    transition-duration: 0.8s;
+}
+
+.activity .activity-cards .container-activity-cards article .activity-image img {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.activity .activity-cards .container-activity-cards article h4 {
+    margin: 4%;
+}
+
+.activity .activity-cards .container-activity-cards .container-double {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activity .activity-cards .container-activity-cards .container-double .activity-image-moy img {
+    width: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.large {
+    height: 250px;
+}
+
+.normal {
+    height: 180px;
+}
+
+.small {
+    height: 120px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #F2F2F2;
+    display: flex;
+}
+
+footer .footer {
+    display: flex;
+    max-width: 100%;
+    width: 80%;
+    margin: auto;
+    line-height: 30px;
+}
+
+footer ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+footer .footer .about, .hosts, .help {
+    width: 30%;
+    padding: 5px;
+    font-weight: 500;
+    font-size: large;
+}
+
+footer .about a, .hosts a, .help a {
+    padding: 0;
+    margin: 0;
+}
+
+footer .about h3, .hosts h3, .help h3 {
+    margin: 40px;
+    margin-bottom: 0;
 }
