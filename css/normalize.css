@@ -506,3 +506,215 @@ footer .about h3, .hosts h3, .help h3 {
     margin: 40px;
     margin-bottom: 0;
 }
+
+
+/* RESPONSIVE */
+
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding-left: 0%;
+        padding-right: 2%;
+        margin: auto;
+        width: 100%;
+    }
+
+    .container-page .search form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile-btn-search {
+        display: block;
+        width: 70px;
+    }
+
+    .no-mobile-search-btn {
+        display: none;
+    }
+    
+
+    .container .container-page .hosting {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .container-page .hosting-cards {
+        max-width: 100%;
+        margin: 0;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container .container-page .hosting .popular {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-items: unset;
+        width: 100%;
+    }
+
+    .container .container-page .hosting .popular .popular-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .container-page .hosting .popular .popular-cards article {
+        width: auto;
+    }
+
+    .container .container-page .hosting .popular .popular-cards article .popular-card .popular-text h3 {
+        font-size: 20px;
+    }
+
+    .container .activity .activity-cards .container-activity-cards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container .activity .activity-cards .container-activity-cards article .activity-image img {
+        width: 320px;
+        height: 400px;
+        object-fit: cover; 
+    }
+
+    .container-double {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        padding-left: 0%;
+        padding-right: 2%;
+        margin: auto;
+        width: 100%;
+    }
+
+    .container header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .container header .logo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 5%;
+        margin-left: 50px;
+    }
+
+    nav {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .container-page {
+        padding: 40px;
+    }
+
+    .container .container-page h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .container .container-page p {
+        align-items: center;
+        margin: 5%;
+    }
+
+    .mobile-btn-search {
+        width: 70px;
+        display: block;
+    }
+
+    .no-mobile-search-btn {
+        display: none;
+    }
+    
+
+    .container .container-page .hosting {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .container-page .hosting-cards {
+        max-width: 100%;
+        margin: 0;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+        margin: 22px;
+    }
+
+    .container .container-page .hosting .container-hosting-cards {
+        margin: 10px;
+    }
+
+    .container .container-page .hosting .container-hosting-cards article {
+        flex: 300px;
+    }
+
+    .container .container-page .hosting .popular {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+        align-items: unset;
+        margin: 0;
+        width: 100%;
+    }
+
+    .container .activity .activity-cards .container-activity-cards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container .activity .activity-cards .container-activity-cards article .activity-image img {
+        width: 600px;
+        height: 220px;
+    }
+
+    .activity .activity-cards .container-activity-cards .container-double .activity-image-moy img {
+        width: 600px;
+        height: 220px;
+    }
+
+    footer {
+        width: 100%;
+        margin: 10%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+    } 
+
+}
