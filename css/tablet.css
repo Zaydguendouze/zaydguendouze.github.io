@@ -1,0 +1,84 @@
+/* RESPONSIVE */
+
+
+@media screen and (max-width: 992px) {
+    .container {
+        padding-left: 0%;
+        padding-right: 2%;
+        margin: auto;
+        width: 100%;
+    }
+
+    .container-page .search form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile-btn-search {
+        display: block;
+        width: 70px;
+    }
+
+    .no-mobile-search-btn {
+        display: none;
+    }
+    
+
+    .container .container-page .hosting {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .container-page .hosting-cards {
+        max-width: 100%;
+        margin: 0;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container .container-page .hosting .popular {
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-items: unset;
+        width: 100%;
+    }
+
+    .container .container-page .hosting .popular .popular-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .container-page .hosting .popular .popular-cards article {
+        width: auto;
+    }
+
+    .container .container-page .hosting .popular .popular-cards article .popular-card .popular-text h3 {
+        font-size: 20px;
+    }
+
+    .container .activity .activity-cards .container-activity-cards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container .activity .activity-cards .container-activity-cards article .activity-image img {
+        width: 320px;
+        height: 400px;
+        object-fit: cover; 
+    }
+
+    .container-double {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}

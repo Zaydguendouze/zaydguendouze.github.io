@@ -1,0 +1,207 @@
+/* HEADER */
+
+/* header et barre de navigation */
+/* space-between pour répartir équitablement les élements*/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* NAVIGATION */
+
+/* regroupement des élements au centre en vertical*/
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* suppression des . précisant une liste */
+/* display-flex pour les aligner à l'horizontale */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+/* cibler les liens non visités */
+nav li a, a:link, a:visited {
+    text-decoration: none;
+    padding-left: 30px;
+    color: #000;
+    padding: 35px;
+    padding-left: 20px;
+}
+
+/* cibler les liens activés par l'utilisateur ou déjà définis*/
+nav li .active, a:active {
+    color: #0065FC;
+    font-weight: 500;
+    border-top: 3px #0065FC solid;
+}
+
+/* apparence au survol avec le pointeur */
+nav li a:hover {
+    border-top: 3px #0065FC solid;
+    color: #0065FC;
+}
+
+/* PAGE */
+
+.container .container-page {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.container-page h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container-page p {
+    font-size: 22px;
+}
+
+/* RECHERCHE */
+
+/* ajustement de tous les élements de la barre */
+.container-page .search form {
+    display: flex;
+    height: 60px;
+}
+
+.container-page .search {
+    margin-top: 50px;
+}
+
+/* localisation */
+
+.localisation {
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    align-items: center;
+}
+
+/* input-search */
+
+.input-search {
+    padding: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    font-weight: bold;
+    width: 350px;
+    align-items: center;
+}
+
+/* btn-search */
+
+.btn-search {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border: none;
+    background: #0065FC;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    width: 200px;
+    align-items: center;
+}
+
+
+/* désactivation du bouton recherche en mode mobile */
+.mobile-btn-search {
+    display: none;
+}
+
+/* filtres */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.filters-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* sélection de tous les élements enfants pour appliquer
+les paramétres */
+.filters-list>* {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+/* déformation des icônes pour agrandissement */
+.filters-list>*:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+    transition-duration: 0.8s;
+}
+
+.filtersIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    font-size: 25px;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 30px;
+    width: 25px;
+    min-height: 60px;
+    min-width: 60px;
+}
+
+.filter-title {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+/* NOTE */
+
+.note {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.info-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #F2F2F2;
+    color: #0065FC;
+    font-size: 15px;
+}
+
+.note-text {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}

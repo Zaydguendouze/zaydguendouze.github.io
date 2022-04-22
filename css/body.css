@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    /* box-sizing est appliqué à tous les éléments */
+    box-sizing: border-box;
+    /* font-family */
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Utilisation de flexbox : modèle de disposition unidimensionnel
+et comme une méthode permettant de distribuer l'espace
+entre des objets d'une interface ainsi que de les aligner */
+
+/* taille de la page principale */
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    margin: auto;
+}
+
+/* HEBERGEMENTS */
+
+.container .container-page h1 {
+    display: flex;
+    margin: 10px;
+}
+
+.hosting {
+    display: flex;
+}
+
+.hosting-cards {
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    width: 60%;
+}
+
+.hosting-cards h1 {
+    margin: 30px;
+}
+
+.hosting-cards .more {
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.container-hosting-cards {
+    display: flex;
+    background: #F2F2F2;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-hosting-cards article {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 1em;
+    box-shadow: 0 0 16px #0000002e;
+    flex: 0 0 250px;
+    margin: 15px;
+}
+
+.container-hosting-cards article:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+    transition-duration: 0.8s;
+}
+
+.container-hosting-cards .hostCard .host-image img {
+    height: 130px;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.container-hosting-cards .hostCard .host-image .host-text {
+    font-size: 17px;
+    margin: 10px;
+}
+
+
+.container-hosting-cards .hostCard .host-image .host-text h4 {
+    margin: 5px;
+    font-size: 17px;
+}
+
+.container-hosting-cards .hostCard .host-image .host-text p {
+    margin: 5px;
+    font-size: 17px;
+}
+
+.container-hosting-cards .hostCard .host-image .host-text .stars {
+    margin: 5px;
+}
+
+.blue {
+    color: #0065FC;
+    font-size: 12px;
+}
+
+.grey {
+    color: #F2F2F2;
+    font-size: 12px;
+}
+
+/* POPULAIRES */
+
+.container .container-page .popular {
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin: 10px;
+    width: 40%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.container .container-page .popular h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    margin-bottom: 2px;
+}
+
+.popular .popular-cards article {
+    background-color: #fff;
+    margin: 25px;
+    padding: 5px;
+    border-radius: 1em;
+    box-shadow: 0 0 16px #0000002e;
+    align-items: stretch;
+}
+
+.popular .popular-cards article:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+    transition-duration: 0.8s;
+}
+
+.popular .popular-cards article .popular-card .popular-image {
+    display: flex;
+    height: 180px;
+}
+
+.popular .popular-cards article .popular-card .popular-image img {
+    width: 40%;
+    height: auto;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    object-fit: cover;
+}
+
+.popular .popular-cards article .popular-card .popular-text {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 5px;
+    height: auto;
+}
+
+.popular .popular-cards article .popular-card .popular-text h3 {
+    margin: 10px;
+    font-size: 16px;
+}
+
+.popular .popular-cards article .popular-card .popular-text p {
+    margin: 10px;
+    font-size: 16px;
+}
+
+.popular .popular-cards article .popular-card .popular-text .stars {
+    margin: 10px;
+}
+
+/* ACTIVITES */
+
+.activity {
+    margin-top: 20px;
+    display: flex;
+}
+
+.activity .activity-cards {
+    width: 100%;
+}
+
+.activity .activity-cards .container-activity-cards {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.activity .activity-cards .container-activity-cards article {
+    background: #fff;
+    border-radius: 1em;
+    box-shadow: 0 0 16px #0000002e;
+    margin: 15px;
+}
+
+.activity .activity-cards .container-activity-cards article:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    transition-duration: 0.8s;
+}
+
+.activity .activity-cards .container-activity-cards article .activity-image img {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.activity .activity-cards .container-activity-cards article h4 {
+    margin: 4%;
+}
+
+.activity .activity-cards .container-activity-cards .container-double {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activity .activity-cards .container-activity-cards .container-double .activity-image-moy img {
+    width: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.large {
+    height: 250px;
+}
+
+.normal {
+    height: 180px;
+}
+
+.small {
+    height: 120px;
+}
