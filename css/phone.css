@@ -40,10 +40,6 @@
         justify-content: center;
     }
 
-    .activity .activity-cards .container-activity-cards article {
-        margin: 50px;
-    }
-
     .container .activity .activity-cards .container-activity-cards {
         width: 100%;
         flex-direction: column;
@@ -51,10 +47,24 @@
     }
 
     .container .activity .activity-cards .container-activity-cards article {
+        width: 160%;
+        height: 250px;
     }
-    
+
+    .container .activity .activity-cards .container-activity-cards article .activity-image {
+        height: 100px;
+    }
+
     .footer {
         flex-direction: column;
-        margin: auto;
+    }
+
+    .footer li a {
+        padding-left: 0;
+
+    }
+
+    footer .footer .about, .hosts, .help {
+        width: 20%;
     }
 }
