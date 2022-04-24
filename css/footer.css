@@ -8,9 +8,10 @@ footer {
 footer .footer {
     display: flex;
     max-width: 100%;
-    width: 80%;
+    width: 1440px;
     margin: auto;
     line-height: 30px;
+    margin-bottom: 2%;
 }
 
 footer ul {
@@ -19,6 +20,7 @@ footer ul {
 }
 
 footer .footer .about, .hosts, .help {
+    margin-top: 2%;
     width: 30%;
     padding: 5px;
     font-weight: 500;
@@ -30,7 +32,11 @@ footer .about a, .hosts a, .help a {
     margin: 0;
 }
 
-footer .about h3, .hosts h3, .help h3 {
-    margin: 40px;
-    margin-bottom: 0;
+footer .hosts h3, .help h3 {
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+footer .about h3 {
+    margin-bottom: 5%;
 }

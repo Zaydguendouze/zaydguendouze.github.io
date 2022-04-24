@@ -3,8 +3,8 @@
 
 @media screen and (max-width: 992px) {
     .container {
-        padding-left: 0%;
-        padding-right: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
         margin: auto;
         width: 100%;
     }
@@ -23,6 +23,18 @@
         display: none;
     }
     
+    nav li .active, a:active {
+        color: #0065FC;
+        font-weight: 500;
+        border-top: 0px transparent !important;
+        border-bottom: 3px #0065FC solid;
+    }
+
+    nav li a:hover {
+        border-top: 0px transparent;
+        border-bottom: 3px #0065FC solid;
+        color: #0065FC;
+}
 
     .container .container-page .hosting {
         display: flex;
@@ -79,6 +91,7 @@
     }
 
     .footer {
+        padding-left: 15%;
         width: 100%;
     }
 }
