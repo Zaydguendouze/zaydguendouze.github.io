@@ -226,8 +226,6 @@ entre des objets d'une interface ainsi que de les aligner */
 
 .activity .activity-cards .container-activity-cards article .activity-image img {
     width: 100%;
-    height: 90%;
-    max-width: 300px;
     object-fit: cover;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;

@@ -10,20 +10,20 @@ header {
 /* NAVIGATION */
 
 /* regroupement des élements au centre en vertical*/
-nav {
+header nav {
     display: flex;
     align-items: center;
 }
 
 /* suppression des . précisant une liste */
 /* display-flex pour les aligner à l'horizontale */
-nav ul {
+header nav ul {
     list-style-type: none;
     display: flex;
 }
 
 /* cibler les liens non visités */
-nav li a, a:link, a:visited {
+header nav li a, a:link, a:visited {
     text-decoration: none;
     padding-left: 30px;
     color: #000;
@@ -32,14 +32,14 @@ nav li a, a:link, a:visited {
 }
 
 /* cibler les liens activés par l'utilisateur ou déjà définis*/
-nav li .active, a:active {
+header nav li .active, a:active {
     color: #0065FC;
     font-weight: 500;
     border-top: 3px #0065FC solid;
 }
 
 /* apparence au survol avec le pointeur */
-nav li a:hover {
+header nav li a:hover {
     border-top: 3px #0065FC solid;
     color: #0065FC;
 }
