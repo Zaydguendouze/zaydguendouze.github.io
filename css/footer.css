@@ -7,6 +7,7 @@ footer {
 
 footer .footer {
     display: flex;
+    justify-content: center;
     max-width: 100%;
     width: 1440px;
     margin: auto;
@@ -17,21 +18,18 @@ footer .footer {
 footer ul {
     list-style-type: none;
     text-decoration: none;
-    justify-content: left;
 }
 
 footer .footer .about, .hosts, .help {
     margin-top: 2%;
-    width: 20%;
     padding: 5px;
     font-weight: 500;
     font-size: large;
+    margin-left: 20px;
 }
 
-footer .about h3, .hosts h3, .help h3 {
+footer h3 {
     margin-bottom: 5%;
+    margin-left: 20px;
 }
 
-footer li {
-    
-}
