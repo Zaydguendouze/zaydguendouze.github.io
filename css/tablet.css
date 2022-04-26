@@ -76,18 +76,13 @@
 
     .container .activity .activity-cards .container-activity-cards {
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
     }
 
-    .container .activity .activity-cards .container-activity-cards article .activity-image img {
-        width: 320px;
-        height: 400px;
-        object-fit: cover; 
-    }
-
-    .container-double {
-        display: flex;
-        flex-direction: column;
+    .tablet {
+        display: flex !important;
+        flex-direction: column !important;
     }
 
     .footer {

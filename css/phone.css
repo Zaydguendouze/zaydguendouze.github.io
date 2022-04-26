@@ -3,6 +3,10 @@
 
 @media screen and (max-width: 768px) {
 
+    .container {
+        margin: auto;
+        width: 100%;
+    }
 
     header {
         flex-direction: column;
@@ -16,7 +20,7 @@
     nav {
         flex-direction: column;
         margin-bottom: 5%;
-        font-size: 50px;
+        font-size: 25px;
     }
 
     h3 {
@@ -36,48 +40,31 @@
         order: 1;
     }
 
-    .container-activity-cards {
-        justify-content: center;
-    }
-
     .container .activity .activity-cards .container-activity-cards {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center ;
-    }
-
-    .container .activity .activity-cards .container-activity-cards .container-double {
-        min-width: 100%;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
-        
-    }
-
-     .container .activity .activity-cards .container-activity-cards .container-double article {
-       width: 160%; 
-        
-    }
-
-     .container .activity .activity-cards .container-activity-cards .activity-image-moy article {
-       width: 160%; 
-        
     }
 
     .container .activity .activity-cards .container-activity-cards article {
-        width: 160%;
-        height: 220px;
+        margin: 15px;
     }
 
-    .container .activity .activity-cards .container-activity-cards article .activity-image img {
-        max-height: 140px;
-        min-width: 100%;
-        object-fit: cover;
+    .container-double {
+        width: 450px !important;
+        max-width: 100%;
     }
 
-    .activity .activity-cards .container-activity-cards .container-double .activity-image-moy img {
-        max-height: 140px;
+    .container .activity .activity-cards .container-activity-cards article .activity-image img, .container-double .activity-image-moy img {
+        width: 420px !important;
+        max-width: 100%;
+        height: 175px;
         object-fit: cover;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        margin: 0;
+    }
+
+    .small {
+        height: 175px !important;
     }
 
     .footer {

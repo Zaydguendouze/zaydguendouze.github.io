@@ -238,8 +238,8 @@ entre des objets d'une interface ainsi que de les aligner */
 
 .activity .activity-cards .container-activity-cards .container-double {
     display: flex;
-    width: 400px;
-    min-width: 250px;
+    width: 35%;
+    min-width: auto;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -248,7 +248,6 @@ entre des objets d'une interface ainsi que de les aligner */
 .activity .activity-cards .container-activity-cards .container-double .activity-image-moy img {
     width: 100%;
     object-fit: cover;
-    overflow: hidden;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 }
