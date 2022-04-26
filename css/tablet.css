@@ -80,6 +80,14 @@
         flex-wrap: wrap;
     }
 
+    .container .activity .activity-cards .container-activity-cards article .activity-image img {
+        width: 320px;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+
     .tablet {
         display: flex !important;
         flex-direction: column !important;
